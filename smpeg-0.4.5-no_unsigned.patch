@@ -1,0 +1,13 @@
+--- MPEGaudio.h.orig	2017-01-08 02:20:15.426575629 -0800
++++ MPEGaudio.h	2017-01-08 02:20:24.212575251 -0800
+@@ -110,8 +110,8 @@
+ typedef struct
+ {
+   int tablename;
+-  unsigned int xlen,ylen;
+-  unsigned int linbits;
++  int xlen,ylen;
++  int linbits;
+   unsigned int treelen;
+   const unsigned int (*val)[2];
+ }HUFFMANCODETABLE;
