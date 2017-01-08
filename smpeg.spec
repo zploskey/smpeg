@@ -54,7 +54,8 @@ Libraries for linking statically to %name
 ./autogen.sh
 %configure --with-sdl-prefix=%_prefix --disable-debug    \
            --disable-opengl-player --disable-gtk-player
-
+sed -i 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' libtool
+sed -i 's|^runpath_var=LD_RUN_PATH|runpath_var=DIE_RPATH_DIE|g' libtool
 make %{?_smp_mflags}
 
 %install
@@ -68,6 +69,7 @@ make %{?_smp_mflags}
 %files
 %doc CHANGES COPYING README
 %{_libdir}/lib*.so.*
+%{_libdir}/lib*.so
 
 %files tools
 %{_bindir}/plaympeg
