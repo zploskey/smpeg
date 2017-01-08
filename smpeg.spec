@@ -10,6 +10,7 @@ Source:    https://github.com/Distrotech/smpeg/archive/%tagname.tar.gz
 URL:       https://icculus.org/smpeg
 BuildRequires: gcc-c++ SDL-devel subversion autoconf
 Patch0:    smpeg-0.4.5-no_unsigned.patch
+Patch1:    smpeg-0.4.5-format_security.patch
 
 %description
 SMPEG is based on UC Berkeley's mpeg_play software MPEG decoder
