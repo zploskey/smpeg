@@ -3,7 +3,7 @@
 Summary:   SDL MPEG Library
 Name:      smpeg
 Version:   0.4.5
-Release:   1
+Release:   1%{dist}
 License:   LGPL
 Group:     System Environment/Libraries
 Source:    https://github.com/Distrotech/smpeg/archive/%tagname.tar.gz
