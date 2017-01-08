@@ -8,7 +8,7 @@ License:   LGPL
 Group:     System Environment/Libraries
 Source:    https://github.com/Distrotech/smpeg/archive/%tagname.tar.gz
 URL:       https://icculus.org/smpeg
-BuildRequires: gcc-c++ SDL-devel subversion autoconf
+BuildRequires: gcc-c++ SDL-devel subversion autoconf automake
 Patch0:    smpeg-0.4.5-no_unsigned.patch
 Patch1:    smpeg-0.4.5-format_security.patch
 
